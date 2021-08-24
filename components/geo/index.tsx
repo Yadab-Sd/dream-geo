@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import ReactMapGL, { Source, Layer } from 'react-map-gl'
 import { Viewport } from '../../types/dataTypes'
 
@@ -13,7 +13,7 @@ const Geo: NextPage = (): JSX.Element => {
   })
 
   return (
-    <>
+    <div className='whole-geo'>
       <ReactMapGL
         {...viewport}
         mapboxApiAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
@@ -41,7 +41,7 @@ const Geo: NextPage = (): JSX.Element => {
           }}
         />
       </ReactMapGL>
-    </>
+    </div>
   )
 }
 
