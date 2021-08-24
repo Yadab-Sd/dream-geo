@@ -1,7 +1,17 @@
 {
-  "extends": ["next", "prettier", "eslint:recommended", "next/core-web-vitals"],
+  "extends": [
+    "next",
+    "eslint:recommended",
+    "prettier",
+    "eslint-config-prettier",
+    "next/core-web-vitals"
+  ],
   "rules": {
     "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off"
+    "@next/next/no-page-custom-font": "off",
+    "no-undef": "off"
+  },
+  "globals": {
+    "JSX": true
   }
 }

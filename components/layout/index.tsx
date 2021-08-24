@@ -1,11 +1,11 @@
-import React, { useEffect, useLayoutEffect } from 'react'
+import React from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { LayoutProps } from '../../types/pagePropTypes'
 import { Layout, Menu, Breadcrumb, Typography } from 'antd'
 import { useRouter } from 'next/dist/client/router'
 
-const { Header, Content, Footer, Sider } = Layout
+const { Header, Content, Footer } = Layout
 const { Title } = Typography
 
 const WholeLayout: NextPage<LayoutProps> = ({
