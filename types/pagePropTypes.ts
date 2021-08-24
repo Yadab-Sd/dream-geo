@@ -1,5 +1,4 @@
 export interface LayoutProps {
-    children: JSX.Element
-    title: string
-  }
-  
+    children: JSX.Element;
+    title: string;
+}

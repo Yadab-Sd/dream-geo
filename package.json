@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --dir pages --dir utils"
+    "lint": "next lint --dir pages --dir utils --dir types"
   },
   "dependencies": {
     "antd": "^4.16.13",

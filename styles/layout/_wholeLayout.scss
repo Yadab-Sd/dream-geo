@@ -1,6 +1,11 @@
 .whole-layout {
   .ant-layout-header {
     border-top: 2px solid #096dd9;
+
+    @include mobile-portrait-max {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   .ant-menu-dark.ant-menu-horizontal {
@@ -25,6 +30,13 @@
   .ant-layout-content.site-layout {
     background: linear-gradient(to bottom, #001628 50%, transparent 50%);
     color: $primary-text-color;
+    padding: 0 50px;
+    margin-top: 64px;
+
+    @include mobile-portrait-max {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   .ant-breadcrumb {

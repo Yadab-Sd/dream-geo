@@ -1,3 +1,4 @@
+import React, { useEffect, useLayoutEffect } from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { LayoutProps } from '../../types/pagePropTypes'
@@ -7,6 +8,7 @@ import { route } from 'next/dist/server/router'
 
 const { Header, Content, Footer, Sider } = Layout
 const { Title } = Typography
+
 
 const WholeLayout: NextPage<LayoutProps> = ({
   children,
@@ -31,7 +33,6 @@ const WholeLayout: NextPage<LayoutProps> = ({
 
         <Content
           className="site-layout"
-          style={{ padding: '0 50px', marginTop: 64 }}
         >
           <Breadcrumb style={{ margin: '16px 0' }}>
             <Breadcrumb.Item>Home</Breadcrumb.Item>
