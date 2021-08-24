@@ -1,0 +1,48 @@
+.whole-layout {
+  .ant-layout-header {
+    border-top: 2px solid #096dd9;
+  }
+
+  .ant-menu-dark.ant-menu-horizontal {
+    border-bottom: 1px solid #07223a;
+  }
+
+  .logo {
+    float: left;
+    width: 80px;
+    height: 35px;
+    margin: 15px 24px 15px 0;
+    background: url('https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .site-layout-background {
+    background: #fff;
+    border-radius: 5px;
+  }
+
+  .ant-layout-content.site-layout {
+    background: linear-gradient(to bottom, #001628 50%, transparent 50%);
+    color: $primary-text-color;
+  }
+
+  .ant-breadcrumb {
+    color: $primary-text-color;
+    .ant-breadcrumb-separator {
+      color: rgba($primary-text-color, 0.5);
+    }
+    & > span:last-child {
+      color: rgba($accent-color2, .8);
+    }
+  }
+
+  .ant-typography {
+    color: $primary-bg-color;
+  }
+
+  h1.ant-typography,
+  .ant-typography h1 {
+    margin-top: 2.5rem;
+  }
+}

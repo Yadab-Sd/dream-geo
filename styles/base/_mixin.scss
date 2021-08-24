@@ -1,0 +1,22 @@
+@mixin mobile-portrait-max {
+  @media all and (max-width: $bp-mobile-portrait-max) {
+    @content;
+  }
+}
+
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -ms-transition: $property;
+  -o-transition: $property;
+  transition: $property !important;
+}
+
+@mixin scrollbarhide($divname) {
+  #{$divname}::-webkit-scrollbar {
+    display: none;
+  }
+  #{$divname} {
+    -ms-overflow-style: none;
+  }
+}
